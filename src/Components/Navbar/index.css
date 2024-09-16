@@ -1,0 +1,106 @@
+.Header-con {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    z-index: 10;
+}
+
+.Header-con:hover .responsive-container {
+    border: 1px solid #2d2d2d;
+    width: 78%;
+}
+
+.Header-con:hover .nav-item {
+    display: inline;
+}
+
+.Header-con:hover .nav-items-container {
+    width: 50%;
+    justify-content: space-around;
+}
+
+.responsive-container {
+    margin-top: 20px;
+    width: 45%;
+    display: flex;
+    border: 1px solid #939393;
+    border-radius: 50px;
+    justify-content: space-between;
+    background-color: #000000f6;
+    color: #bebebe;
+    height: 50px;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 18px;
+    transition: all 0.7s ease;
+    overflow: hidden;
+}
+
+.profile-name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.profile-logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.name {
+    color: #ffffff;
+    margin-right: 5px;
+    font-weight: 400;
+}
+
+.name-tagline {
+    color: #525252;
+}
+
+.nav-items-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+    margin-right: 10px;
+}
+
+.nav-item {
+    color: #8f8f8f;
+    padding: 0px 5px;
+    display: none;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+
+}
+
+.nav-item:hover {
+    margin-bottom: 10px;
+    padding: 0px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.connect-me-btn {
+    height: 35px;
+    width: 150px;
+    font-size: 15px;
+    color: white;
+    border-width: 0px;
+    background-color: #222222;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+}
+
+.connect-me-btn:hover {
+    font-size: 16px;
+    background-color: #404040;
+}

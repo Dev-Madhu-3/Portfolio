@@ -1,0 +1,116 @@
+.home-container {
+    padding: 100px 40px;
+}
+
+
+#intro {
+    min-height: 70vh;
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-section {
+    color: #c6c6c6;
+    text-align: left;
+    padding: 10px 40px;
+    margin-bottom: 30px;
+}
+
+.intro-desig {
+    margin-top: 6vh;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.intro-desig-span {
+    -webkit-text-stroke-color: #4800ff;
+    -webkit-text-stroke-width: 2px;
+    color: black;
+
+}
+
+.intro-desig-skills {
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    font-size: 1em;
+    font-weight: 600;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+.intro-skl {
+    padding: 0 10px;
+    border-right: 2px solid #4800ff;
+    font-size: 12px;
+}
+
+.intro-skl:first-child {
+    padding-left: 0;
+}
+
+.intro-my-name {
+    font-size: 75px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.intro-greeting {
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.right-section {}
+
+.intro-avathar {
+    width: 500px;
+}
+
+
+
+#about {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #17171743;
+    padding: 10px 60px 50px 60px;
+}
+
+.skill-list {
+    display: flex;
+    align-items: center;
+    padding: 60px 0px;
+    justify-content: space-between;
+}
+
+.section-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: bisque;
+}
+
+.about-discription {
+    font-size: 18px;
+    color: #c6c6c6;
+}
+
+.about-resume-button {
+    width: 140px;
+    height: 36px;
+    border-radius: 5px;
+    border-width: 0px;
+    color: #cdcdcd;
+    background-color: #222222;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin: 20px 0px;
+}
+
+.about-resume-button:hover {
+    background-color: #404040;
+    font-size: 16px;
+
+}
