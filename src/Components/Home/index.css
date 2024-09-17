@@ -14,7 +14,7 @@
 .left-section {
     color: #c6c6c6;
     text-align: left;
-    padding: 10px 40px;
+    padding: 5%;
     margin-bottom: 30px;
 }
 
@@ -34,7 +34,7 @@
 .intro-desig-skills {
     text-transform: uppercase;
     margin-top: 0.5rem;
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: 600;
     opacity: 0.7;
 }
@@ -42,7 +42,7 @@
 .intro-skl {
     padding: 0 10px;
     border-right: 2px solid #4800ff;
-    font-size: 12px;
+    font-size: 1em;
 }
 
 .intro-skl:first-child {
@@ -101,7 +101,7 @@
 }
 
 .about-resume-button {
-    width: 140px;
+    width: 170px;
     height: 36px;
     border-radius: 5px;
     border-width: 0px;
@@ -135,5 +135,19 @@
             padding: 50px 0px;
             gap: 60px;
         }
-
+                .left-section {
+                    width: 100%;
+                    padding-left: 20px;
+                    }
+                    
+                    .intro-my-name {
+                        font-size: 3em;
+                    }
+                                .intro-skl {
+                                    font-size: 0.8em;
+                                }
+                
+                                .intro-desig {
+                                    font-size: 1.3em;
+                                }
 }

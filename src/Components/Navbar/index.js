@@ -11,7 +11,6 @@ const NavBar = () => {
                     <p className='name-tagline'>- Software Developer</p>
                 </div>
                 <div className='nav-items-container'>
-                    <a className='nav-item' href='#intro'>About</a>
                     <a className='nav-item' href=''>Projects</a>
                     <a className='nav-item' href=''>Skills</a>
                     <a className='nav-item' href=''>Certifications</a>

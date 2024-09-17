@@ -27,7 +27,7 @@ const Home = () => (
         </section>
 
         <section id='about'>
-            <Fade cascade damping={0.1}>
+            <Fade cascade damping={0.2} >
                 <p className='section-title'>{'<About Me />'}</p>
                 <p className='about-discription'>👋Hi, I'm Madhu Uppala, a passionate Fullstack Developer with growing expertise in web development. With hands-on experience in ReactJS and NodeJS, I’ve had the opportunity to build dynamic applications like an e-commerce platform and a video streaming service.
                 </p>
@@ -37,7 +37,7 @@ const Home = () => (
 
                 <p className='about-discription'>🌐 Some of the projects I’ve built include Nxt Trendz and Nxt Watch, and I’m constantly expanding my knowledge to stay ahead of the curve. I’m currently seeking opportunities to further leverage my skills in both front-end and back-end development to create impactful digital solutions.
                 </p>
-                <button className='about-resume-button'>View Resume</button>
+                <button className='about-resume-button'>Download Resume</button>
             </Fade>
         </section>
 
