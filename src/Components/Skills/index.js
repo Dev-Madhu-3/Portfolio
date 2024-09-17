@@ -7,8 +7,11 @@ import css from "../../assets/css.jpg"
 import js from "../../assets/js.jpg"
 import python from "../../assets/python.jpg"
 import othSkill from "../../assets/brain.png"
+import bootstrap from '../../assets/bootsrap.jpg'
+import sql from '../../assets/sql.jpg'
+import github from '../../assets/github.jpg'
 import './index.css'
-import { Fade } from "react-awesome-reveal"
+import { Zoom } from "react-awesome-reveal"
 
 const hrefs = {
     react,
@@ -19,6 +22,9 @@ const hrefs = {
     css,
     js,
     python,
+    bootstrap,
+    sql,
+    github,
     othSkill
 }
 
@@ -39,9 +45,9 @@ const Skills = ({ title, skills, }) => {
 
 
     return (
-        <Fade direction="up">
+        <Zoom >
             <div className="skills">
-                <div className={title === 'Backend' ? 'skl-title less-top' : 'skl-title'}>{title}</div>
+                <div className='skl-title'>{title}</div>
                 <div className="skill">
                     {skills.map((skill) => {
                         return <RenderSkill key={skill.name} skill={skill.name} percent={skill.percent} sklLogo={skill.logo} />
@@ -49,7 +55,7 @@ const Skills = ({ title, skills, }) => {
                     {/* <Skill skill="ReactJs" percent="70" sklLogo="react" /> */}
                 </div>
             </div>
-        </Fade>
+        </Zoom>
 
     )
 }

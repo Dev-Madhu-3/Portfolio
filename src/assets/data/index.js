@@ -19,6 +19,11 @@ export const skills = {
             name: "Javascript",
             percent: "75",
             logo: "js"
+        },
+        {
+            name: "Bootstrap",
+            percent: "70",
+            logo: "bootstrap"
         }
     ],
     backend: [
@@ -33,9 +38,9 @@ export const skills = {
             logo: "expressjs"
         },
         {
-            name: "MongoDb",
+            name: "SQL",
             percent: "75",
-            logo: "mongo"
+            logo: "sql"
         },
         {
             name: "Javascript",
@@ -59,6 +64,11 @@ export const skills = {
             name: "Python",
             percent: "65",
             logo: "python"
+        },
+        {
+            name: "Github",
+            percent: "80",
+            logo: "github"
         },
         {
             name: "Adaptability",

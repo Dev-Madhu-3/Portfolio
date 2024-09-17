@@ -74,8 +74,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #17171743;
+    /* background-color: #17171743; */
+    background-color: transparent;
     padding: 10px 60px 50px 60px;
+    box-shadow: 1px 1px 10px 3px #0000ff25;
 }
 
 .skill-list {
@@ -94,6 +96,7 @@
 .about-discription {
     font-size: 18px;
     color: #c6c6c6;
+    text-align: center;
 }
 
 .about-resume-button {
@@ -101,7 +104,7 @@
     height: 36px;
     border-radius: 5px;
     border-width: 0px;
-    color: #cdcdcd;
+    color: #fffcfc;
     background-color: #222222;
     font-size: 15px;
     font-weight: 500;

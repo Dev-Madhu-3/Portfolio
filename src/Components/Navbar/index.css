@@ -11,6 +11,7 @@
 .Header-con:hover .responsive-container {
     border: 1px solid #2d2d2d;
     width: 78%;
+    padding-right: 0px;
 }
 
 .Header-con:hover .nav-item {
@@ -18,7 +19,7 @@
 }
 
 .Header-con:hover .nav-items-container {
-    width: 50%;
+    width: 40%;
     justify-content: space-around;
 }
 
@@ -29,7 +30,7 @@
     border: 1px solid #939393;
     border-radius: 50px;
     justify-content: space-between;
-    background-color: #000000f6;
+    background-color: #000000d4;
     color: #bebebe;
     height: 50px;
     align-items: center;

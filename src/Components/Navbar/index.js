@@ -15,7 +15,6 @@ const NavBar = () => {
                     <a className='nav-item' href=''>Projects</a>
                     <a className='nav-item' href=''>Skills</a>
                     <a className='nav-item' href=''>Certifications</a>
-                    <a className='nav-item' href=''>Contact</a>
                     <button className='connect-me-btn'>Connect with me</button>
                 </div>
             </div>

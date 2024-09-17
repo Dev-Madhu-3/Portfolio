@@ -6,6 +6,7 @@ import './App.css'
 function App() {
   return (
     <div className="App">
+      <div className='text-container'>Please Use Landscap Mode</div>
       <div className='background-video-container'>
         <video className='bg-video' autoPlay muted loop>
           <source src={bgvid} type="video/mp4"></source>
