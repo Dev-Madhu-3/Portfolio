@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e59e4c22.css",
-    "main.js": "/Portfolio/static/js/main.8b78e2c9.js",
+    "main.css": "/Portfolio/static/css/main.32db8be3.css",
+    "main.js": "/Portfolio/static/js/main.c4f376f7.js",
     "static/js/453.0a7f0965.chunk.js": "/Portfolio/static/js/453.0a7f0965.chunk.js",
     "static/media/background-video.mp4": "/Portfolio/static/media/background-video.3cbaa17d2f229703f254.mp4",
     "static/media/Animated-avathar.png": "/Portfolio/static/media/Animated-avathar.082f7888c6fbe7cb19fd.png",
@@ -19,12 +19,12 @@
     "static/media/sql.jpg": "/Portfolio/static/media/sql.740dac1c0adc17c0de8f.jpg",
     "static/media/bootsrap.jpg": "/Portfolio/static/media/bootsrap.77bc86656646363ad9c1.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.e59e4c22.css.map": "/Portfolio/static/css/main.e59e4c22.css.map",
-    "main.8b78e2c9.js.map": "/Portfolio/static/js/main.8b78e2c9.js.map",
+    "main.32db8be3.css.map": "/Portfolio/static/css/main.32db8be3.css.map",
+    "main.c4f376f7.js.map": "/Portfolio/static/js/main.c4f376f7.js.map",
     "453.0a7f0965.chunk.js.map": "/Portfolio/static/js/453.0a7f0965.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e59e4c22.css",
-    "static/js/main.8b78e2c9.js"
+    "static/css/main.32db8be3.css",
+    "static/js/main.c4f376f7.js"
   ]
 }
