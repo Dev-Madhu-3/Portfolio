@@ -19,7 +19,7 @@
 }
 
 .Header-con:hover .nav-items-container {
-    width: 40%;
+    width: 50%;
     justify-content: space-around;
 }
 
@@ -59,10 +59,12 @@
     color: #ffffff;
     margin-right: 5px;
     font-weight: 400;
+    font-size: 1em;
 }
 
 .name-tagline {
     color: #525252;
+    font-size: 1em;
 }
 
 .nav-items-container {
@@ -79,20 +81,20 @@
     display: none;
     transition: all 0.2s ease-out;
     text-decoration: none;
-
+    font-size: 1em;
 }
 
 .nav-item:hover {
     margin-bottom: 10px;
     padding: 0px;
-    font-size: 20px;
+    font-size: 1.1em;
     color: #ffffff;
 }
 
 .connect-me-btn {
     height: 35px;
     width: 150px;
-    font-size: 15px;
+    font-size: 0.9rem;
     color: white;
     border-width: 0px;
     background-color: #222222;
@@ -102,6 +104,61 @@
 }
 
 .connect-me-btn:hover {
-    font-size: 16px;
+    font-size: 0.9em;
     background-color: #404040;
+}
+@media (max-width:992px) {
+    .name-tagline {
+        display: none;
+    }
+
+    .Header-con:hover .nav-items-container {
+        width: 60%;
+    }
+
+    .connect-me-btn {
+        display: none;
+    }
+
+}
+
+@media (max-width:768px) {
+    .responsive-container {
+        width: 80%;
+        border: 1px solid #2d2d2d;
+        padding-right: 0px;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .nav-items-container {
+        width: 80%;
+        justify-content: space-around;
+
+    }
+
+    .nav-item {
+        font-size: 0.7em;
+        display: inline;
+    }
+
+    .Header-con:hover .responsive-container {
+        width: 80%;
+        border: 1px solid #2d2d2d;
+        padding-right: 0px;
+    }
+
+    .Header-con:hover .nav-items-container {
+        width: 80%;
+        justify-content: space-around;
+    }
+
+    .nav-item:hover {
+        margin-bottom: 0;
+        padding: 0px;
+        font-size: 0.7em;
+        color: #ffffff;
+    }
 }

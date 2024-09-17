@@ -77,14 +77,13 @@
 .skills {
     border: 3px solid black;
     border-radius: 0 2vmax 0 2vmax;
-    width: calc(20% + 5rem);
-    margin: 0 3vmax;
     position: relative;
     font-size: 1vmax;
-    width: 250px;
+    width: 15em;
     padding: 20px 40px;
+    margin: 0px 4em;
     background-color: transparent;
-        box-shadow: 1px 1px 10px 3px #61616199;
+    box-shadow: 1px 1px 10px 3px #61616199;
 }
 
 .skl-title {
@@ -94,9 +93,21 @@
     transform: translateX(-50%);
     font-size: 1.8vmax;
     background-color: rgb(205, 203, 203);
-        border: 2px solid rgb(0, 0, 210);
+    border: 2px solid rgb(0, 0, 210);
         color: #000000;
     border-radius: 0 1vmax 0 1vmax;
     padding: 5px 10px;
     font-weight: 500;
+}
+@media (max-width:768px) {
+    .skills {
+        font-size: 2vmax;
+        width: 18em;
+        padding: 20px 40px;
+        margin: 0px;
+    }
+
+    .skl-title {
+        font-size: medium;
+    }
 }

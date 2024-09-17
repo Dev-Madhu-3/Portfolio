@@ -20,7 +20,7 @@
 
 .intro-desig {
     margin-top: 6vh;
-    font-size: 27px;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
@@ -28,16 +28,15 @@
     -webkit-text-stroke-color: #4800ff;
     -webkit-text-stroke-width: 2px;
     color: black;
-
+    
 }
 
 .intro-desig-skills {
     text-transform: uppercase;
     margin-top: 0.5rem;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 600;
     opacity: 0.7;
-    letter-spacing: 1px;
 }
 
 .intro-skl {
@@ -51,7 +50,7 @@
 }
 
 .intro-my-name {
-    font-size: 75px;
+    font-size: 4em;
     font-family: 'Times New Roman', Times, serif;
 
 }
@@ -61,10 +60,12 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.right-section {}
+.right-section {
+    width: 40%;
+}
 
 .intro-avathar {
-    width: 500px;
+    width: 100%;
 }
 
 
@@ -84,7 +85,7 @@
     display: flex;
     align-items: center;
     padding: 60px 0px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .section-title {
@@ -106,14 +107,33 @@
     border-width: 0px;
     color: #fffcfc;
     background-color: #222222;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 500;
     transition: all 0.2s ease;
     margin: 20px 0px;
+    box-shadow: 1px 1px 10px 3px #747272e2;
 }
 
 .about-resume-button:hover {
     background-color: #404040;
-    font-size: 16px;
+    font-size: 1.1em;
+    }
+    
+    @media (max-width:768px) {
+        .right-section {
+            display: none;
+        }
+    
+        #about {
+            padding: 10px 0px;
+        }
+    
+        .skill-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0px;
+            gap: 60px;
+        }
 
 }
