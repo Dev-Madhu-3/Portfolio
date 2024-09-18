@@ -69,8 +69,7 @@
 }
 
 
-
-#about {
+.each-section {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -89,13 +88,13 @@
 }
 
 .section-title {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     color: bisque;
 }
 
 .about-discription {
-    font-size: 18px;
+    font-size: 1.3em;
     color: #c6c6c6;
     text-align: center;
 }
@@ -114,12 +113,20 @@
     box-shadow: 1px 1px 10px 3px #747272e2;
 }
 
+.Certificates-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 30px 0;
+}
 .about-resume-button:hover {
     background-color: #404040;
     font-size: 1.1em;
     }
     
     @media (max-width:768px) {
+        
         .right-section {
             display: none;
         }
@@ -143,11 +150,22 @@
                     .intro-my-name {
                         font-size: 3em;
                     }
-                                .intro-skl {
-                                    font-size: 0.8em;
-                                }
-                
-                                .intro-desig {
-                                    font-size: 1.3em;
-                                }
+.intro-skl {
+    font-size: 0.8em;
+}
+
+.intro-desig {
+    font-size: 1.3em;
+}
+.section-title {
+    font-size: 25px;
+    font-weight: 900;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 3px #0000ff53;
+    width: 100%;
+}
+
+.about-discription {
+    font-size: medium;
+}
 }

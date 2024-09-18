@@ -1,0 +1,154 @@
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6vmax 0;
+    gap: 3vmax;
+}
+
+.proj-img-con {
+    padding: 0;
+    width: 40em;
+}
+
+.proj-img-con img {
+    width: 100%;
+}
+
+.proj-content {
+    border-left: 2px solid blue;
+    background: linear-gradient(-90deg, #02020200, #0400ff22, #0d00ff5e);
+    font-size: 1vmax;
+    padding: 20px 40px;
+    width: 40em;
+
+}
+
+/* .project:first-child {
+    margin-top: 1vmax;
+}
+
+.project:last-child {
+    margin-bottom: 7vmax;
+} */
+
+.project:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.project:nth-child(even) .proj-content {
+    border-right: 2px solid blue;
+    border-left: none;
+    background: linear-gradient(90deg, #02020200, #0400ff22, #0d00ff5e);
+}
+
+
+.proj-desc {
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 2vmax;
+    color: aliceblue;
+}
+
+.proj-title {
+    text-transform: uppercase;
+    font-size: 2.3em;
+    font-weight: 700;
+    margin-bottom: 1vmax;
+    color: #faeeaf;
+}
+
+.proj-btn {
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 0.7vmax 1.2vmax;
+    margin-top: 1.2vmax;
+    margin-right: 1vmax;
+    font-size: 1vmax;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 2px solid blue;
+    transition: all 0.5s;
+    color: rgb(163, 163, 250);
+}
+
+
+
+.proj-btn:hover {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.proj-btn-type {
+    background-color: blue;
+    transition: all 0.2s;
+}
+
+.proj-btn-type:hover {
+    background-color: transparent;
+}
+
+.proj-btn a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.proj-lang {
+    font-size: 1.3em;
+    margin: 1vmax 0 0.6vmax;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+@media (max-width:768px) {
+    .project {
+        flex-direction: column;
+        border-left: 2px solid Blue;
+        gap: 0;
+        width: 80vw;
+    }
+
+    /* .project:last-child {
+        margin-bottom: 4vmax;
+    } */
+
+    .project:nth-child(even) {
+        border-left: none;
+        border-right: 2px solid Blue;
+    }
+
+    .proj-title {
+        font-size: 3em;
+        font-weight: 600;
+    }
+
+    .proj-img-con,
+    .proj-content {
+        width: auto;
+        padding: 3vw 0;
+        padding-left: 4vw;
+        border: none;
+    }
+
+
+
+    .proj-content {
+        font-size: 0.7vmax;
+    }
+
+    .proj-desc {
+        font-weight: 500;
+        font-size: 1.6em;
+    }
+
+    .project:nth-child(even) {
+        flex-direction: column;
+    }
+
+
+}

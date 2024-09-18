@@ -39,14 +39,7 @@
 }
 
 .skl-name {
-    font-size: 1.4em;
-    padding-bottom: 10px;
-    color: black;
-        font-weight: 500;
-}
-
-.skl-name {
-    font-size: 1.4em;
+    font-size: 1em;
     padding-bottom: 10px;
     color: #afafaf;
 }
@@ -108,6 +101,10 @@
     }
 
     .skl-title {
-        font-size: medium;
-    }
+        font-size: 25px;
+        }
+        
+        .skl-content {
+            margin: 4vmax 0 1.4vmax;
+        }
 }
