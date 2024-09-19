@@ -85,12 +85,12 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.8vmax;
-    background-color: rgb(205, 203, 203);
-    border: 2px solid rgb(0, 0, 210);
-        color: #000000;
+    background-color: rgba(255, 255, 255, 0.934);
+        color: #160023;
     border-radius: 0 1vmax 0 1vmax;
     padding: 5px 10px;
-    font-weight: 500;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            box-shadow: 1px 1px 10px 3px #0008fffb;
 }
 @media (max-width:768px) {
     .skills {

@@ -1,10 +1,11 @@
 import './index.css'
-import { Fade } from "react-awesome-reveal"
+import { Fade, Zoom } from "react-awesome-reveal"
 import avathar from '../../assets/Animated-avathar.png'
 import Skills from '../Skills'
 import { skills } from '../../assets/data'
 import Project from '../Project'
 import Certificate from '../Certificate'
+import Resume from '../../assets/resume.pdf';
 
 const Home = () => (
     <div className='home-container'>
@@ -39,16 +40,21 @@ const Home = () => (
 
                 <p className='about-discription'>🌐 Some of the projects I’ve built include Nxt Trendz and Nxt Watch, and I’m constantly expanding my knowledge to stay ahead of the curve. I’m currently seeking opportunities to further leverage my skills in both front-end and back-end development to create impactful digital solutions.
                 </p>
-                <button className='about-resume-button'>Download Resume</button>
+                <button className='about-resume-button'>
+                    <a href={Resume} download="Madhu's Resume">Download Resume</a>
+                </button>
             </Fade>
         </section>
 
         <section className='each-section' id='skills'>
             <p className='section-title'>{'<My Skills />'}</p>
             <div className="skill-list">
-                <Skills title="Frontend" skills={skills.frontend} />
-                <Skills title="Backend" skills={skills.backend} />
-                <Skills title="Other" skills={skills.other} />
+                <Zoom cascade >
+                    <Skills title="Frontend" skills={skills.frontend} />
+                    <Skills title="Backend" skills={skills.backend} />
+                    <Skills title="Other" skills={skills.other} />
+                </Zoom>
+
             </div>
         </section>
 
@@ -56,11 +62,16 @@ const Home = () => (
             <p className='section-title'>{'<Projects />'}</p>
 
             <div className='projects-list'>
-                <Project title="Student Leave Management System" logo="slmsProj" github="https://github.com/VishankWagh/SLMS" live="https://student-leave-management-system.netlify.app" techs="ReactJs, NodeJs, ExpressJs, MongoDb" desc="Built an online platform to tackle a real world problem by managing student’s leaves on the SLMS system, which was assigned to me as an intern at Navpad Infotech." />
-                <Project title="Student Leave Management System" logo="slmsProj" github="https://github.com/VishankWagh/SLMS" live="https://student-leave-management-system.netlify.app" techs="ReactJs, NodeJs, ExpressJs, MongoDb" desc="Built an online platform to tackle a real world problem by managing student’s leaves on the SLMS system, which was assigned to me as an intern at Navpad Infotech." direction='left' />
-                <Project title="Student Leave Management System" logo="slmsProj" github="https://github.com/VishankWagh/SLMS" live="https://student-leave-management-system.netlify.app" techs="ReactJs, NodeJs, ExpressJs, MongoDb" desc="Built an online platform to tackle a real world problem by managing student’s leaves on the SLMS system, which was assigned to me as an intern at Navpad Infotech." />
-                <Project title="Student Leave Management System" logo="slmsProj" github="https://github.com/VishankWagh/SLMS" live="https://student-leave-management-system.netlify.app" techs="ReactJs, NodeJs, ExpressJs, MongoDb" desc="Built an online platform to tackle a real world problem by managing student’s leaves on the SLMS system, which was assigned to me as an intern at Navpad Infotech." direction='left' />
-                <Project title="Student Leave Management System" logo="slmsProj" github="https://github.com/VishankWagh/SLMS" live="https://student-leave-management-system.netlify.app" techs="ReactJs, NodeJs, ExpressJs, MongoDb" desc="Built an online platform to tackle a real world problem by managing student’s leaves on the SLMS system, which was assigned to me as an intern at Navpad Infotech." />
+                <Project title="Nxt Watch - Online video streaming application" logo="ProjectNxtwatch" github="https://github.com/Dev-Madhu-3/Nxt-Watch" live="https://dev-madhu-3.github.io/Nxt-Watch" techs="React.js, Routing, REST API Calls, CSS, Bootstrap" desc="Developed a video streaming platform allowing users to watch videos, save videos to a
+watch later list, and search for specific content." />
+                <Project title="Nxt Watch - Online video streaming application" logo="ProjectNxtwatch" github="https://github.com/Dev-Madhu-3/Nxt-Watch" live="https://dev-madhu-3.github.io/Nxt-Watch" techs="React.js, Routing, REST API Calls, CSS, Bootstrap" desc="Developed a video streaming platform allowing users to watch videos, save videos to a
+watch later list, and search for specific content." direction='left' />
+                <Project title="Nxt Watch - Online video streaming application" logo="ProjectNxtwatch" github="https://github.com/Dev-Madhu-3/Nxt-Watch" live="https://dev-madhu-3.github.io/Nxt-Watch" techs="React.js, Routing, REST API Calls, CSS, Bootstrap" desc="Developed a video streaming platform allowing users to watch videos, save videos to a
+watch later list, and search for specific content." />
+                <Project title="Nxt Watch - Online video streaming application" logo="ProjectNxtwatch" github="https://github.com/Dev-Madhu-3/Nxt-Watch" live="https://dev-madhu-3.github.io/Nxt-Watch" techs="React.js, Routing, REST API Calls, CSS, Bootstrap" desc="Developed a video streaming platform allowing users to watch videos, save videos to a
+watch later list, and search for specific content." direction='left' />
+                <Project title="Nxt Watch - Online video streaming application" logo="ProjectNxtwatch" github="https://github.com/Dev-Madhu-3/Nxt-Watch" live="https://dev-madhu-3.github.io/Nxt-Watch" techs="React.js, Routing, REST API Calls, CSS, Bootstrap" desc="Developed a video streaming platform allowing users to watch videos, save videos to a
+watch later list, and search for specific content." />
 
             </div>
 
@@ -70,11 +81,11 @@ const Home = () => (
             <p className='section-title'>{'<Certificatons />'}</p>
             <div className='Certificates-list'>
                 <Fade cascade damping={0.2}>
-                    <Certificate title='Scaler: SOLID Principles every developer must know' imgUrl='crtisolid' num='01' />
-                    <Certificate title='Scaler: SOLID Principles every developer must know' imgUrl='crtisolid' num='02' />
-                    <Certificate title='Scaler: SOLID Principles every developer must know' imgUrl='crtisolid' num='03' />
-                    <Certificate title='Scaler: SOLID Principles every developer must know' imgUrl='crtisolid' num='04' />
-                    <Certificate title='Scaler: SOLID Principles every developer must know' imgUrl='crtisolid' num='05' />
+                    <Certificate title='NxtWave: ReactJs Course Completion' imgUrl='certificateReact' num='01' />
+                    <Certificate title='NxtWave: ReactJs Course Completion' imgUrl='certificateReact' num='02' />
+                    <Certificate title='NxtWave: ReactJs Course Completion' imgUrl='certificateReact' num='03' />
+                    <Certificate title='NxtWave: ReactJs Course Completion' imgUrl='certificateReact' num='04' />
+                    <Certificate title='NxtWave: ReactJs Course Completion' imgUrl='certificateReact' num='05' />
                 </Fade>
             </div>
         </section>
@@ -82,6 +93,7 @@ const Home = () => (
         <section className='each-section' id='Contact'>
             <p className='section-title'>{'<Contact Me />'}</p>
             <div className='contact-me'>
+                ------ Contact Container Will Appeare Here ------
 
             </div>
         </section>

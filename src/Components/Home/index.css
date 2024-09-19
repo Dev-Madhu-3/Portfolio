@@ -112,6 +112,10 @@
     margin: 20px 0px;
     box-shadow: 1px 1px 10px 3px #747272e2;
 }
+.about-resume-button a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .Certificates-list {
     display: flex;
@@ -124,32 +128,36 @@
     background-color: #404040;
     font-size: 1.1em;
     }
+.contact-me {
+    text-align: center;
+    color: #fffcfc;
+}
     
-    @media (max-width:768px) {
-        
-        .right-section {
-            display: none;
-        }
-    
-        #about {
-            padding: 10px 0px;
-        }
-    
-        .skill-list {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 50px 0px;
-            gap: 60px;
-        }
-                .left-section {
-                    width: 100%;
-                    padding-left: 20px;
-                    }
-                    
-                    .intro-my-name {
-                        font-size: 3em;
-                    }
+@media (max-width:768px) {
+
+    .right-section {
+        display: none;
+    }
+
+    #about {
+        padding: 10px 0px;
+    }
+
+    .skill-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0px;
+        gap: 60px;
+    }
+
+.left-section {
+    width: 100%;
+    padding-left: 20px;
+}
+.intro-my-name {
+    font-size: 3em;
+}
 .intro-skl {
     font-size: 0.8em;
 }
@@ -158,11 +166,10 @@
     font-size: 1.3em;
 }
 .section-title {
-    font-size: 25px;
+    font-size: 27px;
     font-weight: 900;
-    padding: 10px;
-    box-shadow: 1px 1px 10px 3px #0000ff53;
     width: 100%;
+    text-align: center;
 }
 
 .about-discription {

@@ -1,9 +1,9 @@
 import React from 'react'
-import crtisolid from "../../assets/certi_solid.png"
+import certificateReact from "../../assets/certificate-react.png"
 import './index.css'
 
 const hrefs = {
-    crtisolid,
+    certificateReact,
 }
 
 const Certificate = ({ title, imgUrl, num }) => {

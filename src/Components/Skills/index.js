@@ -11,7 +11,6 @@ import bootstrap from '../../assets/bootsrap.jpg'
 import sql from '../../assets/sql.jpg'
 import github from '../../assets/github.jpg'
 import './index.css'
-import { Zoom } from "react-awesome-reveal"
 
 const hrefs = {
     react,
@@ -45,7 +44,6 @@ const Skills = ({ title, skills, }) => {
 
 
     return (
-        <Zoom >
             <div className="skills">
                 <div className='skl-title'>{title}</div>
                 <div className="skill">
@@ -54,8 +52,7 @@ const Skills = ({ title, skills, }) => {
                     })}
                     {/* <Skill skill="ReactJs" percent="70" sklLogo="react" /> */}
                 </div>
-            </div>
-        </Zoom>
+        </div>
 
     )
 }

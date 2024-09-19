@@ -5,16 +5,16 @@ const NavBar = () => {
     return (
         <nav className='Header-con'>
             <div className='responsive-container'>
-                <div className='profile-name-container'>
+                <a className='profile-name-container' href='#intro'>
                     <img className='profile-logo' src={prof} alt='Profile' />
                     <p className='name'>Madhu Uppala</p>
                     <p className='name-tagline'>- Software Developer</p>
-                </div>
+                </a>
                 <div className='nav-items-container'>
-                    <a className='nav-item' href=''>Projects</a>
-                    <a className='nav-item' href=''>Skills</a>
-                    <a className='nav-item' href=''>Certifications</a>
-                    <a className='nav-item' href=''>Contact</a>
+                    <a className='nav-item' href='#projects'>Projects</a>
+                    <a className='nav-item' href='#skills'>Skills</a>
+                    <a className='nav-item' href='#certifications'>Certifications</a>
+                    <a className='nav-item' href='#Contact'>Contact</a>
                     <button className='connect-me-btn'>Connect with me</button>
                 </div>
             </div>

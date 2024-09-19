@@ -1,12 +1,12 @@
 import React from 'react'
-import slmsProj from "../../assets/proj_slms.png";
+import ProjectNxtwatch from "../../assets/project-nxtwatch.png";
 import { Fade, Bounce } from "react-awesome-reveal"
 import { LuExternalLink } from "react-icons/lu";
 
 import './index.css'
 
 const hrefs = {
-    slmsProj,
+    ProjectNxtwatch,
 }
 
 const isMobile = window.innerWidth <= 768;
@@ -17,7 +17,7 @@ const Project = ({ title, logo, desc, github, live, techs, direction }) => {
 
     const renderMobileView = () => (
         <Bounce>
-            <div className="project">
+            <div className={direction === 'left' ? 'project right-border' : 'project'}>
                 <div className="proj-img-con">
                     <img src={hrefs[logo]} alt="" />
                 </div>
@@ -52,11 +52,9 @@ const Project = ({ title, logo, desc, github, live, techs, direction }) => {
 
     )
 
-
-
     return (
         <>{isMobile ? <>{renderMobileView()}</> : <div className="project">
-            <Fade when={isMobile} direction={direction === 'left' ? 'left' : 'right'} duration={1000}  >
+            <Fade direction={direction === 'left' ? 'left' : 'right'} duration={1000}  >
                 <div className="proj-img-con">
                     <img src={hrefs[logo]} alt="" />
                 </div>
@@ -64,7 +62,7 @@ const Project = ({ title, logo, desc, github, live, techs, direction }) => {
 
             <Fade cascade duration={1000} >
                 <div className="proj-content">
-                    <Fade cascade >
+                    <Fade cascade damping={0.1}>
                         <div className="proj-title">{title}</div>
                         <div className="proj-desc">
                             <p>
