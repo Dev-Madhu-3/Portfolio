@@ -77,7 +77,6 @@
     /* background-color: #17171743; */
     background-color: transparent;
     padding: 10px 60px 50px 60px;
-    box-shadow: 1px 1px 10px 3px #0000ff25;
 }
 
 .skill-list {
@@ -88,7 +87,7 @@
 }
 
 .section-title {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     color: bisque;
 }
@@ -132,7 +131,125 @@
     text-align: center;
     color: #fffcfc;
 }
-    
+
+.contact-me {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 2vmax 7vmax 1vmax;
+}
+
+.contact-content {
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    padding: 3vmax;
+    font-size: 1vmax;
+    padding-right: 3vmax;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mail-btn {
+    border: 2px solid blue;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1vmax;
+    padding: 0.7vmax 1vmax;
+    width: fit-content;
+    transition: all 0.2s;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    float: inline-end;
+}
+
+.mail-btn:hover {
+    background-color: blue;
+}
+
+.mail-btn img {
+    margin-left: 1vmax;
+    filter: invert(1);
+    height: 1.5em;
+}
+
+.cnt-btns {
+    width: 100%;
+    padding-top: 1em;
+}
+
+.contacts {
+    overflow: hidden;
+    border-left: 3px solid blue;
+    padding-left: 3vmax;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.cnt-title {
+    font-size: 2em;
+    font-weight: 700;
+    padding-bottom: 1vmax;
+}
+
+.cnt-desc {
+    font-size: 1.2em;
+}
+
+.cnt-info {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    margin: 0.7vmax 1vmax;
+    text-decoration: none;
+    color: white;
+}
+
+.cnt-info:hover {
+    text-decoration: underline;
+}
+
+.cnt-icon {
+    padding: 0.5vmax 0;
+    border: 3px solid #0e00ad;
+    border-radius: 1vmax 0 0 1vmax;
+    height: 100%;
+    width: 2.7em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2vmax;
+}
+
+.cnt {
+    border-radius: 0 1vmax 1vmax 0;
+    font-size: 1.2vmax;
+    padding: 0.6vmax 9px;
+    width: 90%;
+    background: linear-gradient(-90deg, #02020200, #0c005c, #1100ad);
+}
+
+.cnt-icon img {
+    height: 0.5em;
+    filter: invert(1);
+}
+
+.em {
+    font-style: italic;
+}
+
+.cnt-bx2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 @media (max-width:768px) {
 
     .right-section {
@@ -166,7 +283,7 @@
     font-size: 1.3em;
 }
 .section-title {
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 900;
     width: 100%;
     text-align: center;
@@ -174,5 +291,41 @@
 
 .about-discription {
     font-size: medium;
+}
+.contact-me {
+    flex-direction: column;
+    padding: 0 7vmax;
+}
+
+.contact .sec-title {
+    padding: inherit 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.contact-content {
+    padding: 1vmax 0 2vmax;
+    text-align: left;
+    width: auto;
+    border-bottom: 2px solid blue;
+}
+
+.contacts {
+    padding: 2vmax 0 1vmax;
+    border: none;
+    width: auto;
+}
+
+.cnt-info {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.cnt-icon {
+    padding: 0.3vmax 0;
+}
+
+.mail-btn {
+    float: inline-start;
 }
 }

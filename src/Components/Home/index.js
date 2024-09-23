@@ -6,6 +6,8 @@ import { skills } from '../../assets/data'
 import Project from '../Project'
 import Certificate from '../Certificate'
 import Resume from '../../assets/resume.pdf';
+import githubIcon from "../../assets/github.png";
+import mailIcon from "../../assets/mail.png";
 
 const Home = () => (
     <div className='home-container'>
@@ -89,11 +91,45 @@ watch later list, and search for specific content." />
                 </Fade>
             </div>
         </section>
-
         <section className='each-section' id='Contact'>
             <p className='section-title'>{'<Contact Me />'}</p>
-            <div className='contact-me'>
-                ------ Contact Container Will Appeare Here ------
+            <div className="contact-me">
+                <div className="contact-content">
+                    <div className="cnt-bx1">
+                        <div className="cnt-title">Lets Connect...</div>
+                        <div className="cnt-desc">
+                            Feel free to reach out—I'm just a click away to connect and collaborate !
+                        </div>
+                        <div className="cnt-btns">
+                            <a href="mailto:madhustudent4@gmail.com" className="mail-btn">
+                                <div className="">Get in Touch...</div>
+                                <img src={mailIcon} alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="contacts">
+                    <div className="cnt-bx2">
+                        <div onClick={() => {
+                            navigator.clipboard.writeText
+                                ("9989857197");
+                            alert("Contact Number Copied")
+                        }} className="cnt-info">
+                            <span className="cnt-icon">+91</span>
+                            <div className="cnt">9989857197</div>
+                        </div>
+                        <a href="https://www.linkedin.com/in/madhu-uppala" target="_blank" className="cnt-info" rel="noreferrer">
+                            <span className="cnt-icon">in</span>
+                            <div className="cnt">Linkedin Profile</div>
+                        </a>
+                        <a href="https://github.com/dev-madhu-3/" target="_blank" className="cnt-info" rel="noreferrer">
+                            <span className="cnt-icon">
+                                <img src={githubIcon} alt="" />
+                            </span>
+                            <div className="cnt">Github Profile</div>
+                        </a>
+                    </div>
+                </div>
 
             </div>
         </section>
