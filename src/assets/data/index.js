@@ -135,7 +135,6 @@ export const projectDetails = [{
     live:'https://dev-madhu-3.github.io/NxtTrendz',
     techs:'React.js, Routing, REST API Calls, CSS, Bootstrap, Local Strorage, Authentication.',
     desc:'Built a responsive e-commerce platform for browsing products, adding items to the cart, and managing purchases. Integrated secure user authentication and implemented search, filter, and sorting features. Enabled cart persistence with local storage and used CSS and Bootstrap for a seamless UI.',
-    direction:'right'
 },{
     id:2,
     title:'Nxt Watch - Online video streaming application',
@@ -144,7 +143,6 @@ export const projectDetails = [{
     live:'https://dev-madhu-3.github.io/Nxt-Watch',
     techs:'React.js, Routing, REST API Calls, CSS, Bootstrap',
     desc:'Developed a video streaming platform allowing users to watch videos, save videos to a watch later list, and search for specific content',
-    direction:'left'
 },
 {
     id:3,
@@ -154,7 +152,6 @@ export const projectDetails = [{
     live:'https://dev-madhu-3.github.io/ipldashboard',
     techs:'React.js, Routing, REST API Calls, CSS, Bootstrap',
     desc:'Developed an IPL Dashboard app with React Router, allowing users to view team lists, individual team details, and match info. Fetched data asynchronously with API calls.',
-    direction:'right'
 },
 {
     id:4,
@@ -164,7 +161,6 @@ export const projectDetails = [{
     live:'https://dev-madhu-3.github.io/Browserhistory',
     techs:'HTML, CSS, Bootstrap, JavaScript.',
     desc:'Created a web page with Browser History for quick access to web portals, utilizing cache for faster data retrieval and a delete toggle for removing saved links.',
-    direction:'left'
 },
 {
     id:5,
@@ -174,7 +170,6 @@ export const projectDetails = [{
     live:'https://dev-madhu-3.github.io/GameApp',
     techs:'HTML, CSS, Bootstrap, JavaScript.',
     desc:'Built a feature to match images with a displayed target image, using a timer and score tracking. Performance-based badges are awarded based on user scores.',
-    direction:'right'
 }]
 
 export const certificateDetails=[

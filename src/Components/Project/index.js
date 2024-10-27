@@ -19,12 +19,12 @@ const hrefs = {
 
 // const isMobile = window.innerWidth <= 768;
 
-const Project = ({ title, logo, desc, github, live, techs, direction }) => {
+const Project = ({ id, title, logo, desc, github, live, techs }) => {
 
 
     return (
      <div className="project">
-            <Fade direction={direction === 'left' ? 'left' : 'right'} duration={1000}  >
+            <Fade direction={id%2 === 0 ? 'left' : 'right'} duration={1000}  >
                 <div className="proj-img-con">
                     <img src={hrefs[logo]} alt="" />
                 </div>
