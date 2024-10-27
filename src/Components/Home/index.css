@@ -2,7 +2,6 @@
     padding: 100px 40px;
 }
 
-
 #intro {
     min-height: 70vh;
     align-content: center;
@@ -76,7 +75,16 @@
     align-items: center;
     /* background-color: #17171743; */
     background-color: transparent;
-    padding: 10px 60px 50px 60px;
+    padding: 10px 30px 50px 30px;
+}
+.contact-section{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #17171743; */
+    background-color: transparent;
+    padding: 10px;
 }
 
 .skill-list {
@@ -120,23 +128,23 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 80px;
     padding: 30px 0;
+
 }
+
 .about-resume-button:hover {
     background-color: #404040;
     font-size: 1.1em;
-    }
-.contact-me {
-    text-align: center;
-    color: #fffcfc;
 }
 
 .contact-me {
-    margin: auto;
     display: flex;
     justify-content: center;
-    padding: 2vmax 7vmax 1vmax;
+    text-align: center;
+    color: #fffcfc;
+    padding: 30px 0;
+    font-size: 20px;
 }
 
 .contact-content {
@@ -144,7 +152,7 @@
     width: 50%;
     height: 100%;
     padding: 3vmax;
-    font-size: 1vmax;
+    font-size: 1.5vmax;
     padding-right: 3vmax;
     text-align: right;
     display: flex;
@@ -250,6 +258,7 @@
     justify-content: center;
     flex-direction: column;
 }
+
 @media (max-width:768px) {
 
     .right-section {
@@ -294,7 +303,9 @@
 }
 .contact-me {
     flex-direction: column;
-    padding: 0 7vmax;
+    padding: 0;
+    width: 100%;
+   
 }
 
 .contact .sec-title {
@@ -319,13 +330,19 @@
 .cnt-info {
     margin-left: 0;
     margin-right: 0;
+    
 }
 
 .cnt-icon {
-    padding: 0.3vmax 0;
+    font-size: 15px;
 }
 
 .mail-btn {
     float: inline-start;
+    font-size: 13px;
+}
+.cnt{
+    font-size: 15px;
+    padding: 7px 0;
 }
 }

@@ -5,6 +5,7 @@
     position: relative;
     flex-direction: column;
     margin: 25px 0;
+    text-decoration: none;
 }
 
 .certificate:hover .certi-title {
@@ -86,13 +87,13 @@
 }
 
 .certi-title {
-    margin: 1vmax 0;
-    padding: 1vmax;
+    margin: 1vmax 5px;
+    padding-right: 1vmax;
     transition: all 0.5s;
     position: absolute;
     top: 90%;
     font-size: 1.3vmax;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.5px;
     z-index: 10;
     width: 100%;
@@ -115,7 +116,7 @@
     }
 
     .certi-title {
-        top: 95%;
+        top: 100%;
         font-size: 1em;
         font-weight: 600;
         height: 2.5vmax;
@@ -134,6 +135,10 @@
     .certi-img {
         border: 2px solid blue;
 
+    }
+
+    .certificate:hover .certi-title {
+        top: 60%;
     }
 
     .certi-crd .crti-num {

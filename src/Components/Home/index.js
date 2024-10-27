@@ -2,7 +2,7 @@ import './index.css'
 import { Fade, Zoom } from "react-awesome-reveal"
 import avathar from '../../assets/Animated-avathar.png'
 import Skills from '../Skills'
-import { skills } from '../../assets/data'
+import { skills, projectDetails, certificateDetails } from '../../assets/data'
 import Project from '../Project'
 import Certificate from '../Certificate'
 import Resume from '../../assets/resume.pdf';
@@ -64,17 +64,7 @@ const Home = () => (
             <p className='section-title'>{'<Projects />'}</p>
 
             <div className='projects-list'>
-                <Project title="Nxt Watch - Online video streaming application" logo="ProjectNxtwatch" github="https://github.com/Dev-Madhu-3/Nxt-Watch" live="https://dev-madhu-3.github.io/Nxt-Watch" techs="React.js, Routing, REST API Calls, CSS, Bootstrap" desc="Developed a video streaming platform allowing users to watch videos, save videos to a
-watch later list, and search for specific content." />
-                <Project title="Nxt Watch - Online video streaming application" logo="ProjectNxtwatch" github="https://github.com/Dev-Madhu-3/Nxt-Watch" live="https://dev-madhu-3.github.io/Nxt-Watch" techs="React.js, Routing, REST API Calls, CSS, Bootstrap" desc="Developed a video streaming platform allowing users to watch videos, save videos to a
-watch later list, and search for specific content." direction='left' />
-                <Project title="Nxt Watch - Online video streaming application" logo="ProjectNxtwatch" github="https://github.com/Dev-Madhu-3/Nxt-Watch" live="https://dev-madhu-3.github.io/Nxt-Watch" techs="React.js, Routing, REST API Calls, CSS, Bootstrap" desc="Developed a video streaming platform allowing users to watch videos, save videos to a
-watch later list, and search for specific content." />
-                <Project title="Nxt Watch - Online video streaming application" logo="ProjectNxtwatch" github="https://github.com/Dev-Madhu-3/Nxt-Watch" live="https://dev-madhu-3.github.io/Nxt-Watch" techs="React.js, Routing, REST API Calls, CSS, Bootstrap" desc="Developed a video streaming platform allowing users to watch videos, save videos to a
-watch later list, and search for specific content." direction='left' />
-                <Project title="Nxt Watch - Online video streaming application" logo="ProjectNxtwatch" github="https://github.com/Dev-Madhu-3/Nxt-Watch" live="https://dev-madhu-3.github.io/Nxt-Watch" techs="React.js, Routing, REST API Calls, CSS, Bootstrap" desc="Developed a video streaming platform allowing users to watch videos, save videos to a
-watch later list, and search for specific content." />
-
+                {projectDetails.map((eachItem)=><Project key={eachItem.id} {...eachItem} />)}
             </div>
 
         </section>
@@ -83,15 +73,11 @@ watch later list, and search for specific content." />
             <p className='section-title'>{'<Certificatons />'}</p>
             <div className='Certificates-list'>
                 <Fade cascade damping={0.2}>
-                    <Certificate title='NxtWave: ReactJs Course Completion' imgUrl='certificateReact' num='01' />
-                    <Certificate title='NxtWave: ReactJs Course Completion' imgUrl='certificateReact' num='02' />
-                    <Certificate title='NxtWave: ReactJs Course Completion' imgUrl='certificateReact' num='03' />
-                    <Certificate title='NxtWave: ReactJs Course Completion' imgUrl='certificateReact' num='04' />
-                    <Certificate title='NxtWave: ReactJs Course Completion' imgUrl='certificateReact' num='05' />
+                   { certificateDetails.map((e)=>(<Certificate key={e.num} {...e} />))}
                 </Fade>
             </div>
         </section>
-        <section className='each-section' id='Contact'>
+        <section className='contact-section' id='Contact'>
             <p className='section-title'>{'<Contact Me />'}</p>
             <div className="contact-me">
                 <div className="contact-content">

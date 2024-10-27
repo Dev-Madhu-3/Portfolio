@@ -15,7 +15,7 @@ const NavBar = () => {
                     <a className='nav-item' href='#skills'>Skills</a>
                     <a className='nav-item' href='#certifications'>Certifications</a>
                     <a className='nav-item' href='#Contact'>Contact</a>
-                    <button className='connect-me-btn'>Connect with me</button>
+                    <a className='connect-me-btn' href='https://wa.me/+919989857197'>Connect with me</a>
                 </div>
             </div>
         </nav>

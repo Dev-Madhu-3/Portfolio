@@ -38,10 +38,11 @@
 }
 
 .project:nth-child(even) .proj-content {
-    border-right: 2px solid blue;
     border-left: none;
     background: linear-gradient(90deg, #02020200, #0400ff22, #0d00ff5e);
+    border-right: 2px solid blue;
 }
+
 
 
 .proj-desc {
@@ -112,11 +113,7 @@
         gap: 0;
         width: 80vw;
     }
-
- .right-border {
-     border-left: none;
-     border-right: 2px solid Blue;
- }
+    
 .proj-title {
     font-size: 3em;
     font-weight: 600;
@@ -127,28 +124,35 @@
     width: auto;
     padding: 3vw 0;
     padding-left: 4vw;
-    border: none;
+    border: 0px;
+    border-right: none;
+    
 }
-
-.right-border .proj-content {
-    border-left: none;
-    background: linear-gradient(90deg, #02020200, #0400ff22, #0d00ff5e);
-    text-align: right;
-    padding-right: 4vw;
-}
-
-.right-border .proj-img-con {
-    padding-left: none;
-    padding-right: 4vw;
-}
-
 
 .proj-content {
-    font-size: 0.7vmax;
+    font-size: 0.8vmax;
 }
 
 .proj-desc {
     font-weight: 500;
     font-size: 1.6em;
+    
 }
+.project:nth-child(even) {
+    flex-direction: column;
+    text-align: right;
+    border-right: 2px solid blue;
+    border-left: none;
+}
+.proj-img-con:nth-child(odd){
+    padding-right: 4vw;
+}
+.proj-content:nth-child(odd) {
+    padding-right: 4vw;
+    border: none;
+}
+.project:nth-child(even) .proj-content {
+    border-right: none;
+}
+
 }

@@ -126,3 +126,86 @@ export const exprSkills = {
         },
     ],
 }
+
+export const projectDetails = [{
+    id:1,
+    title:'Nxt Watch - Online video streaming application',
+    logo:'ProjectNxtwatch',
+    github:'https://github.com/Dev-Madhu-3/Nxt-Watch',
+    live:'https://dev-madhu-3.github.io/Nxt-Watch',
+    techs:'React.js, Routing, REST API Calls, CSS, Bootstrap',
+    desc:'Developed a video streaming platform allowing users to watch videos, save videos to a watch later list, and search for specific content',
+    direction:'right'
+},{
+    id:1,
+    title:'Nxt Watch - Online video streaming application',
+    logo:'ProjectNxtwatch',
+    github:'https://github.com/Dev-Madhu-3/Nxt-Watch',
+    live:'https://dev-madhu-3.github.io/Nxt-Watch',
+    techs:'React.js, Routing, REST API Calls, CSS, Bootstrap',
+    desc:'Developed a video streaming platform allowing users to watch videos, save videos to a watch later list, and search for specific content',
+    direction:'left'
+}]
+
+export const certificateDetails=[
+    {
+        title:'NxtWave: ReactJs Course Completion',
+        imgUrl:'certificateReact',
+        num:'01',
+        certificateUrl:'https://certificates.ccbp.in/intensive/react-js?id=ADGLBUAMEI',
+    },
+    {
+        title:'NxtWave: NodeJs Course Completion',
+        imgUrl:'certificateNode',
+        num:'02',
+        certificateUrl:'https://certificates.ccbp.in/intensive/node-js?id=USVXEALZUI',
+    },
+    {
+        title:'NxtWave: JavaScript Course Completion',
+        imgUrl:'certificateJs',
+        num:'03',
+        certificateUrl:'https://certificates.ccbp.in/intensive/dynamic-web-application?id=VDULNOFTYR',
+    },
+    {
+        title:'NxtWave: JavaScript Essentials Course Completion',
+        imgUrl:'certificateJsEssentials',
+        num:'04',
+        certificateUrl:'https://certificates.ccbp.in/intensive/javascript-essentials?id=XFNDLUBMZH',
+    },
+    {
+        title:'NxtWave: Python Course Completion',
+        imgUrl:'certificatePython',
+        num:'05',
+        certificateUrl:'https://certificates.ccbp.in/intensive/programming-foundations?id=VSRRQHJUMZ',
+    },
+    {
+        title:'NxtWave: SQL Course Completion',
+        imgUrl:'certificateSQL',
+        num:'06',
+        certificateUrl:'https://certificates.ccbp.in/intensive/introduction-to-databases?id=CRHXHSGQIH',
+    },
+    {
+        title:'NxtWave:  HTML, CSS, Bootstrap Course Completion',
+        imgUrl:'certificateWeb',
+        num:'07',
+        certificateUrl:'https://certificates.ccbp.in/intensive/static-website?id=IBOOMIVIYK',
+    },
+    {
+        title:'NxtWave: Developer Foundations (Version Control, Command Line Tool) Course Completion',
+        imgUrl:'certificateVc',
+        num:'08',
+        certificateUrl:'https://certificates.ccbp.in/intensive/developer-foundations?id=IQHMDKNJJG',
+    },
+    {
+        title:'NxtWave: FlexBox (Styling) Course Completion',
+        imgUrl:'certificateFlex',
+        num:'09',
+        certificateUrl:'https://certificates.ccbp.in/intensive/flexbox?id=YJJRNIZFEX',
+    },
+    {
+        title:'NxtWave: Flexbox with Bootstrap Course Completion',
+        imgUrl:'certificateFlexBt',
+        num:'10',
+        certificateUrl:'https://certificates.ccbp.in/intensive/responsive-website?id=DBIZZGLJRX',
+    }
+]
