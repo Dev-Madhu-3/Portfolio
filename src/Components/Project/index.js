@@ -1,12 +1,20 @@
 import React from 'react'
-import ProjectNxtwatch from "../../assets/project-nxtwatch.png";
+import ProjectNxtwatch from "../../assets/project-nxtwatch.png"
+import ProjectNxtTrendz from "../../assets/project-nxttrendz.png"
+import ProjectIplDashboard from "../../assets/project-ipldashboard.png"
+import ProjectBrowserHistory from "../../assets/project-searchhistory.png"
+import ProjectMatchGame from "../../assets/project-matchgame.png"
 import { Fade } from "react-awesome-reveal"
-import { LuExternalLink } from "react-icons/lu";
+import { LuExternalLink } from "react-icons/lu"
 
 import './index.css'
 
 const hrefs = {
     ProjectNxtwatch,
+    ProjectNxtTrendz,
+    ProjectIplDashboard,
+    ProjectBrowserHistory,
+    ProjectMatchGame
 }
 
 // const isMobile = window.innerWidth <= 768;
