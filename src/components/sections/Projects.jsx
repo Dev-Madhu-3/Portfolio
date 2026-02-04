@@ -20,8 +20,8 @@ const Projects = () => {
     filter === "All"
       ? projectData
       : filter === "Featured"
-      ? projectData.filter((project) => project.featured)
-      : projectData.slice(0, 3);
+        ? projectData.filter((project) => project.featured)
+        : projectData.slice(0, 3);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -56,7 +56,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 relative">
+    <section id="projects" className="xl:p-20 py-20 relative">
       <div className="container mx-auto px-6">
         <motion.div
           ref={ref}
@@ -146,15 +146,17 @@ const Projects = () => {
                     View Details
                   </Button>
                   <div className="flex gap-2">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-white transition-colors duration-300"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <FaGithub size={20} />
-                    </a>
+                    {project.private || (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-white transition-colors duration-300"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <FaGithub size={20} />
+                      </a>
+                    )}
                     <a
                       href={project.demo}
                       target="_blank"
@@ -249,11 +251,30 @@ const Projects = () => {
                 </Button>
                 <Button
                   variant="secondary"
-                  href={selectedProject.github}
-                  target="_blank"
+                  disabled={selectedProject.private}
+                  className={`relative group ${
+                    selectedProject.private
+                      ? "opacity-50 cursor-not-allowed"
+                      : "hover:bg-gray-200"
+                  }`}
+                  {...(!selectedProject.private && {
+                    href: selectedProject.github,
+                    target: "_blank",
+                  })}
                 >
                   <FaGithub className="mr-2" />
                   View Code
+                  {/* Tooltip when disabled */}
+                  {selectedProject.private && (
+                    <span
+                      variant="secondary"
+                      className="absolute h-full margin-auto left-0
+      bg-white text-black text-xs px-auto py-1 rounded 
+      opacity-0 group-hover:opacity-100 transition pointer-events-none"
+                    >
+                      🔒 This repository is private
+                    </span>
+                  )}
                 </Button>
               </div>
             </div>

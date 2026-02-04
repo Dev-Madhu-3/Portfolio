@@ -13,21 +13,21 @@ const SocialIcons = ({ className = "", size = "text-2xl" }) => {
     {
       name: "GitHub",
       icon: <FaGithub />,
-      href: "https://github.com/madhuuppala",
+      href: "https://github.com/Dev-Madhu-3",
       color: "hover:text-gray-400",
     },
     {
       name: "LinkedIn",
       icon: <FaLinkedin />,
-      href: "https://linkedin.com/in/madhuuppala",
+      href: "www.linkedin.com/in/madhu-uppala",
       color: "hover:text-blue-400",
     },
-    {
-      name: "Twitter",
-      icon: <FaTwitter />,
-      href: "https://twitter.com/madhuuppala",
-      color: "hover:text-sky-400",
-    },
+    // {
+    //   name: "Twitter",
+    //   icon: <FaTwitter />,
+    //   href: "https://twitter.com/madhuuppala",
+    //   color: "hover:text-sky-400",
+    // },
     {
       name: "Email",
       icon: <FaEnvelope />,
