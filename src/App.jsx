@@ -8,12 +8,12 @@ import Projects from "./components/sections/Projects";
 import Experience from "./components/sections/Experience";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/layout/Footer";
-import CustomCursor from "./components/common/CustomCursor";
+// import CustomCursor from "./components/common/CustomCursor";
 import { Toaster } from "react-hot-toast";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  // const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     // Simulate loading
@@ -22,15 +22,15 @@ function App() {
     }, 2000);
 
     // Mouse move handler for custom cursor
-    const handleMouseMove = (e) => {
-      setCursorPosition({ x: e.clientX, y: e.clientY });
-    };
+    // const handleMouseMove = (e) => {
+    //   setCursorPosition({ x: e.clientX, y: e.clientY });
+    // };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    // window.addEventListener("mousemove", handleMouseMove);
 
     return () => {
       clearTimeout(timer);
-      window.removeEventListener("mousemove", handleMouseMove);
+      // window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
@@ -55,10 +55,10 @@ function App() {
   return (
     <div className="relative min-h-screen bg-dark-bg text-white overflow-x-hidden">
       {/* Custom Cursor */}
-      <CustomCursor position={cursorPosition} />
+      {/* <CustomCursor position={cursorPosition} /> */}
 
       {/* Background Particles */}
-      <div className="particles">
+      {/* <div className="particles">
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
@@ -73,7 +73,7 @@ function App() {
             }}
           />
         ))}
-      </div>
+      </div> */}
 
       {/* Navbar */}
       <Navbar />

@@ -41,7 +41,7 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-20 relative">
+    <section id="skills" className="xl:p-20 py-20 relative">
       <div className="container mx-auto px-6">
         <motion.div
           ref={ref}

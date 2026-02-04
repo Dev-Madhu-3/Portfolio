@@ -15,6 +15,7 @@ export const projectData = [
     ],
     github: "https://github.com/madhuuppala/ecommerce-platform",
     demo: "https://ecommerce-demo.madhuuppala.com",
+    private:true,
     featured: true,
   },
   {

@@ -5,6 +5,7 @@ import { FaDownload, FaCode, FaLaptopCode, FaRocket } from "react-icons/fa";
 import Button from "../common/Button";
 import Card from "../common/Card";
 import { skillsData } from "../../data/skillsData";
+import resume from "../../assets/resume.pdf"
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -34,10 +35,18 @@ const About = () => {
     },
   };
 
+      const handleNavClick = (e, id) => {
+        e.preventDefault();
+        const element = document.querySelector(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      };
+
   const featuredSkills = skillsData.slice(0, 8);
 
   return (
-    <section id="about" className="py-20 relative">
+    <section id="about" className="xl:p-20 py-20 relative">
       <div className="container mx-auto px-6">
         <motion.div
           ref={ref}
@@ -93,10 +102,19 @@ const About = () => {
               variants={itemVariants}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button variant="primary" icon>
-                Download Resume
+              <Button
+                variant="primary"
+                icon
+                as="a"
+                href={resume}
+                download="Madhu's Resume.pdf"
+              >
+                View Resume
               </Button>
-              <Button variant="secondary" href="#contact">
+              <Button
+                onClick={(e) => handleNavClick(e,"#contact")}
+                variant="secondary"
+              >
                 Hire Me
               </Button>
             </motion.div>
@@ -138,22 +156,22 @@ const About = () => {
         >
           <Card className="text-center">
             <FaCode className="text-4xl text-neon-blue mx-auto mb-4" />
-            <h3 className="text-3xl font-bold mb-2">50+</h3>
+            <h3 className="text-3xl font-bold mb-2">10+</h3>
             <p className="text-gray-400">Projects Completed</p>
           </Card>
           <Card className="text-center">
             <FaLaptopCode className="text-4xl text-neon-purple mx-auto mb-4" />
-            <h3 className="text-3xl font-bold mb-2">5+</h3>
+            <h3 className="text-3xl font-bold mb-2">3+</h3>
             <p className="text-gray-400">Years Experience</p>
           </Card>
           <Card className="text-center">
             <FaRocket className="text-4xl text-neon-pink mx-auto mb-4" />
-            <h3 className="text-3xl font-bold mb-2">30+</h3>
+            <h3 className="text-3xl font-bold mb-2">7+</h3>
             <p className="text-gray-400">Happy Clients</p>
           </Card>
           <Card className="text-center">
             <FaDownload className="text-4xl text-green-400 mx-auto mb-4" />
-            <h3 className="text-3xl font-bold mb-2">1000+</h3>
+            <h3 className="text-3xl font-bold mb-2">300+</h3>
             <p className="text-gray-400">Code Commits</p>
           </Card>
         </motion.div>

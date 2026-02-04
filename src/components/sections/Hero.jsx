@@ -13,6 +13,14 @@ const Hero = () => {
     setIsLoaded(true);
   }, []);
 
+    const handleNavClick = (e, id) => {
+      e.preventDefault();
+      const element = document.querySelector(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
   const roles = [
     "Fullstack Developer",
     "React Specialist",
@@ -122,10 +130,21 @@ const Hero = () => {
             variants={itemVariants}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
           >
-            <Button variant="primary" icon href="#projects" target="_self">
+            <Button
+              onClick={(e) => handleNavClick(e, "#projects")}
+              variant="primary"
+              icon
+              // href="#projects"
+              // target="_self"
+            >
               View My Work
             </Button>
-            <Button variant="secondary" href="#contact" target="_self">
+            <Button
+              onClick={(e) => handleNavClick(e, "#contact")}
+              variant="secondary"
+              // href="#contact"
+              // target="_self"
+            >
               Get In Touch
             </Button>
           </motion.div>
